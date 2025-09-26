@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Launcher</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Define la fuente para el cuerpo */
+        body {
+            font-family: 'Inter', sans-serif;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Oculta la barra de estado en los navegadores móviles que lo permitan */
+        @media (display-mode: standalone) {
+            body {
+                padding-top: 0;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-900">
+
+    <!-- Contenedor principal de la "aplicación" -->
+    <div class="flex flex-col items-center justify-center p-8 bg-gray-800 rounded-3xl shadow-2xl w-80 max-w-sm text-center">
+        <!-- Ícono de YouTube (SVG simple para un rendimiento óptimo) -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-24 h-24 text-red-600 mb-6 drop-shadow-lg">
+            <path d="M12.75 3.028a.75.75 0 00-.724 0L.324 9.467A4.264 4.264 0 000 12c0 2.222.84 4.306 2.343 5.864l-.568.569a.75.75 0 001.06 1.06l.569-.568c1.558 1.503 3.642 2.343 5.864 2.343 2.222 0 4.306-.84 5.864-2.343l.568.568a.75.75 0 001.06-1.06l-.568-.569A4.264 4.264 0 0024 12c0-2.222-.84-4.306-2.343-5.864L12.75 3.028zM12 15.75a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z" />
+        </svg>
+
+        <!-- Título y descripción -->
+        <h1 class="text-3xl font-bold text-white mb-2">Abrir YouTube</h1>
+        <p class="text-gray-400 mb-8">Esta es la forma más rápida de acceder a YouTube.</p>
+
+        <!-- Botón para abrir YouTube -->
+        <a href="https://www.youtube.com/" target="_blank" class="w-full">
+            <button class="w-full py-4 px-6 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
+                <span class="text-lg">Ir a YouTube</span>
+            </button>
+        </a>
+    </div>
+
+</body>
+</html>
